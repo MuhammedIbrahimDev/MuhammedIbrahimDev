@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6.0.2
 
       - name: Create assets folder
         run: mkdir -p assets
 
       - name: Generate GitHub Snake
-        uses: Platane/snk@v3.2.0
+        uses: Platane/snk@v3.4.1
         with:
-          github_user_name: mu-hammad-ibrahim
+          github_user_name: MuhammedIbrahimDev
           outputs: |
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark
