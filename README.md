@@ -41,25 +41,11 @@ I'm a **Full Stack .NET Developer** passionate about crafting efficient ERP syst
 
 ---
 
-### 💻 Featured Projects
-
-#### **[📚 BooXtation](https://github.com/mu-hammad-ibrahim/BooXtation)**
-
-A **bookstore management system** built using **ASP.NET Core MVC** and **Entity Framework Core** as part of the **Digital Egypt Pioneers Initiative**.
-
-🎯 **Highlights:**
-
-- Product catalog management and filtering (authors, prices, categories, etc.)
-- Advanced admin dashboard for managing books and orders
-- Integrated user authentication
-
----
-
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mu-hammad-ibrahim&show_icons=true&theme=radical" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mu-hammad-ibrahim&layout=compact&theme=radical" alt="Top Languages" width="36%">
+  <img src="https://github-readme-stats.vercel.app/api?username=MuhammedIbrahimDev&show_icons=true&theme=radical" alt="GitHub Stats" width="48%">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammedIbrahimDev&layout=compact&theme=radical" alt="Top Languages" width="36%">
 </p>
 
 ---
@@ -67,7 +53,6 @@ A **bookstore management system** built using **ASP.NET Core MVC** and **Entity 
 ### 🌐 Connect with Me
 
 <p align="center">
-  <a href="mailto:mohamed_ibrahim1999@outlook.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://www.linkedin.com/in/mu-hammad-ibrahim"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:muhammed.ibrahim.dev@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/mu-hammad-ibrahim"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
