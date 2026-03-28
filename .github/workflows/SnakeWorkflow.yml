@@ -4,12 +4,19 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
 jobs:
   generate-github-snake:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0  # مهم عشان pull --rebase يشتغل
 
       - name: Create assets folder
         run: mkdir -p assets
@@ -31,7 +38,10 @@ jobs:
       - name: Commit and push files
         run: |
           git add assets/*
-          git commit -m "Add generated GitHub Snake images"
+
+          git commit -m "Add generated GitHub Snake images" || echo "No changes"
+
+          git pull --rebase origin main
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
