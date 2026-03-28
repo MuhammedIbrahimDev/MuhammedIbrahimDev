@@ -3,24 +3,19 @@ name: Generate GitHub Snake
 on:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   generate-github-snake:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v4.2.2
 
       - name: Create assets folder
         run: mkdir -p assets
 
       - name: Generate GitHub Snake
-        uses: Platane/snk@v3.4.1
+        uses: Platane/snk@v3.2.0
         with:
           github_user_name: MuhammedIbrahimDev
           outputs: |
@@ -36,5 +31,7 @@ jobs:
       - name: Commit and push files
         run: |
           git add assets/*
-          git commit -m "Add generated GitHub Snake images" || echo "No changes to commit"
+          git commit -m "Add generated GitHub Snake images"
           git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
