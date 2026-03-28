@@ -30,8 +30,9 @@ jobs:
 
       - name: Commit and push files
         run: |
+          git pull
           git add assets/*
           git commit -m "Add generated GitHub Snake images"
-          git push origin main
+          git push origin main || git push --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
